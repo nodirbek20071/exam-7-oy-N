@@ -1,0 +1,14 @@
+.buttons {
+    background-color: greenyellow;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    transition: 0.3s;
+}
+
+.buttons:hover {
+    background-color: #ffff00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

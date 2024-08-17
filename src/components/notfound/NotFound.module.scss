@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  text-align: center;
+  background-color: #f0f0f0;
+  animation: fade-in 1s;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  animation: scale-up 1s;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 20px 0;
+  animation: slide-up 1s;
+}
+
+.homeLink {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  animation: pulse 2s infinite;
+
+  &:hover {
+    background-color: #007bff;
+    color: #fff;
+    animation: shake 0.4s;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+}
+
+/* Animations */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
